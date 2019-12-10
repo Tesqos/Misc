@@ -15,8 +15,13 @@ def fib(n):
         prev, curr = curr, res[-1]
     return res
 
-def ispaldr(s):"""Checks if argument is a palindrome."""
+def ispaldr(s):
+    """Checks if argument is a palindrome."""
     if s==''.join([s[-i] for i in range(1,len(s)+1)]):
         return True
     else:
         return False
+
+def strinv(s):
+    """Inverts a string"""
+    return ''.join([s[-1-i] for i in range(len(s))])
